@@ -1,0 +1,17 @@
+save-session=/config/aria2.session
+input-file=/config/aria2.session
+save-session-interval=60
+
+dir=/downloads
+
+enable-rpc=true
+rpc-listen-port=6800
+rpc-allow-origin-all=true
+rpc-listen-all=true
+
+file-allocation=prealloc
+disk-cache=128M
+
+rpc-secret=<password>
+
+auto-file-renaming=false
