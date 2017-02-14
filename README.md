@@ -6,6 +6,7 @@
 
 0. Put `aria2.conf` file in the config dir, with following content.
 [Config reference](https://aria2.github.io/manual/en/html/aria2c.html#aria2-conf)
+
     ```
     save-session=/config/aria2.session
     input-file=/config/aria2.session
@@ -22,6 +23,7 @@
     auto-file-renaming=false
     ```
 0. Run following command to start aria2 instance
+
     ```
     docker run \
       -d \
