@@ -45,6 +45,7 @@ su-exec ${UID}:${GID} \
         --enable-rpc \
         --conf-path=/config/aria2.conf \
         --rpc-listen-port=6800 \
+        --dir=/downloads \
      > /config/aria2.log \
     2> /config/aria2.err &
 
