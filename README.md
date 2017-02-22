@@ -21,9 +21,9 @@
 
     auto-file-renaming=false
 
-    max-connection-per-server=20
+    max-connection-per-server=16
     min-split-size=1M
-    split=20
+    split=16
     ```
 0. Run following command to start aria2 instance
 
