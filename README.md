@@ -5,7 +5,6 @@
 0. `mkdir` a config dir, say `/storage/aria2`
 
 0. Put `aria2.conf` file in the config dir, with following content.
-[Config reference](https://aria2.github.io/manual/en/html/aria2c.html#aria2-conf)
 
     ```
     save-session=/config/aria2.session
@@ -21,6 +20,10 @@
     rpc-secret=<password>
 
     auto-file-renaming=false
+
+    max-connection-per-server=20
+    min-split-size=1M
+    split=20
     ```
 0. Run following command to start aria2 instance
 
@@ -37,7 +40,9 @@
     ```
 
 Note:
-Make sure the download folder is writable by the given uid/gid.
+* Make sure the download folder is writable by the given uid/gid.
+* `aria2.conf` will be created automatically if not exists.
+* Learn more about tuning `aria2.conf`: [Config reference](https://aria2.github.io/manual/en/html/aria2c.html#aria2-conf)
 
 ## Parameters
 

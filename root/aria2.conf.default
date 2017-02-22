@@ -15,3 +15,7 @@ disk-cache=128M
 rpc-secret=<password>
 
 auto-file-renaming=false
+
+max-connection-per-server=20
+min-split-size=1M
+split=20
